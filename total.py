@@ -77,7 +77,7 @@ def best_record(score):
         rec_val.append(value)
 
     if len(rec_val) == 12:
-        if score > min(rec):
+        if score > rec_val[11]:
             return True
         else:
             return False
